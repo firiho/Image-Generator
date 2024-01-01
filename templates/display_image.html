@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="icon" type="image/png" href="../static/assets/favicon.png">
+        <title>Image Display</title>
+    </head>
+    <body>
+        <div class="box">
+            <h1 class="title">Generated Image</h1>
+            <span class="prompt"> {{ prompt }} </span>
+            <img src="{{ image_url }}" alt="Generated Image" class="img-frame" height = "512px" width="512px">
+            <a href="{{ url_for('index') }}">Generate another picture</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" type="image/png" href="../static/assets/favicon.png">
+    <title>Image Generator</title>
+    
+</head>
+<body>
+    <h1 class="title">Image Generator</h1>
+    <form action="/generate-image" method="post">
+        <textarea name="prompt" placeholder="Enter a prompt" rows="4"></textarea>
+        <input type="submit" value="Generate Image">
+    </form>
+</body>
+</html>
